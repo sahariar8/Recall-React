@@ -30,4 +30,4 @@ npm run dev
 ```
 ## UX design diagram
 
-![Car Search Interface](file:///home/shahariar/Downloads/tapa.png)
+![Car Search Interface](https://i.ibb.co.com/Fh9Wr0n/tapa.png)
