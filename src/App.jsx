@@ -1,13 +1,15 @@
 
 import './App.css'
-import Header from './Header'
+// import Boimela from './component/Boimela'
+import Layout from './component/Layout'
+
 
 function App() {
 
   return (
-    <>
-      <Header />
-    </>
+    <div className='mx-5 p-4'>
+      <Layout />
+    </div>
   )
 }
 
