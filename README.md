@@ -31,3 +31,11 @@ npm run dev
 ## UX design diagram
 
 ![Car Search Interface](https://i.ibb.co.com/Fh9Wr0n/tapa.png)
+
+## Component Breakdown diagram
+![Component Diagram](https://i.ibb.co.com/yd6hCy2/tapa-Car-drawio-1.png)
+
+## Deploy link
+```
+https://recall-react.vercel.app/
+```
