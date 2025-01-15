@@ -18,7 +18,7 @@ This project aims to attract clients with an intuitive design and scalable featu
 
 **step-1**
 ```
-clone this repo
+https://github.com/sahariar8/Recall-React.git
 ```
 **step-2**
 ```
