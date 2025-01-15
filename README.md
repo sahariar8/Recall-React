@@ -28,5 +28,6 @@ npm install
 ```
 npm run dev
 ```
+## UX design diagram
 
-
+![Car Search Interface](file:///home/shahariar/Downloads/tapa.png)
