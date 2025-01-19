@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const Car = ({car}) => {
   return (
-    <div className="border rounded-md shadow-md p-5">
+    <div className="border rounded-md shadow-md p-5" >
       <CarInfo title={car.title} brand={car.brand} year={car.year} price={car.price} ispremium={car.isPremium}/>
     </div>
   )
