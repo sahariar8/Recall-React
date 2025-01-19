@@ -1,15 +1,17 @@
 
-import Header from './Header'
+
 import Search from './Search'
 import AllCars from './AllCars'
 import Header1 from './Header1'
+import { useState } from 'react'
 
 const Layout = () => {
+  const [searchCar,setSearchCar] = useState("")
   return (
     <div>
       <Header1/>
-      <Search/>
-      <AllCars/>
+      <Search searchCar={searchCar} onSearchCar={setSearchCar} />
+      <AllCars searchCar={searchCar} />
     </div>
   )
 }

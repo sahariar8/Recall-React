@@ -1,6 +1,6 @@
 
-
-const Search = () => {
+import PropTypes from 'prop-types'
+const Search = ({searchCar,onSearchCar}) => {
   return (
     <div className="flex items-center space-x-4 mt-4">
     <input 
@@ -20,5 +20,9 @@ const Search = () => {
   
   )
 }
+Search.propTypes = {
+  searchCar:PropTypes.string.isRequired,
+  onSearchCar:PropTypes.func.isRequired
 
+}
 export default Search
