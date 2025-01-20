@@ -1,7 +1,8 @@
 
 import PropTypes from 'prop-types'
-const Search = ({searchCar,onSearchCar}) => {
+const Search = ({searchCar,onSearchCar,isPremium,onSetPremium}) => {
   console.log(searchCar)
+  console.log(isPremium)
   return (
     <div className="flex items-center space-x-4 mt-4">
     <input 
@@ -14,6 +15,8 @@ const Search = ({searchCar,onSearchCar}) => {
     <label className="flex items-center space-x-2">
       <input 
         type="checkbox" 
+        checked={isPremium}
+        onChange={(e)=> onSetPremium(e.target.checked)}
         id="searchFilter" 
         className="w-4 h-4"
       />
@@ -25,7 +28,9 @@ const Search = ({searchCar,onSearchCar}) => {
 }
 Search.propTypes = {
   searchCar:PropTypes.string.isRequired,
-  onSearchCar:PropTypes.func.isRequired
+  onSearchCar:PropTypes.func.isRequired,
+  isPremium:PropTypes.bool.isRequired,
+  onSetPremium:PropTypes.func.isRequired
 
 }
 export default Search

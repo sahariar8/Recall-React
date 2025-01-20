@@ -1,5 +1,5 @@
 import CarInfo from "./CarInfo"
-import PropTypes from 'prop-types'
+import PropTypes, { object } from 'prop-types'
 
 
 const Car = ({car}) => {

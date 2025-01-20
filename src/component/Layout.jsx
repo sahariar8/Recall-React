@@ -15,12 +15,15 @@ const Cars = [
 ];
 
 const Layout = () => {
-  const [searchCar,setSearchCar] = useState("")
+  const [searchCar,setSearchCar] = useState("");
+  const [isPremium,setIsPremium] = useState(false);
+
+ 
   return (
     <div>
       <Header1/>
-      <Search searchCar={searchCar} onSearchCar={setSearchCar} />
-      <AllCars searchCar={searchCar} cars={Cars} />
+      <Search searchCar={searchCar} onSearchCar={setSearchCar} isPremium={isPremium} onSetPremium={setIsPremium} />
+      <AllCars searchCar={searchCar} cars={Cars} isPremium={isPremium} />
     </div>
   )
 }

@@ -1,14 +1,20 @@
 import Car from "./Car";
 import PropTypes from 'prop-types'
 
-const AllCars = ({cars,searchCar}) => {
+const AllCars = ({cars,searchCar,isPremium}) => {
+
   const rows = [];
+
   cars.forEach((car) => {
     if(!car.title.toLowerCase().includes(searchCar.toLowerCase())){
       return;
     }
-      rows.push(<Car car={car} key={car.id}/>)
+    if(isPremium && !car.isPremium){
+      return;
+    }
+      rows.push(<Car car={car} key={car.id} />)
   });
+
   return (
     <div className="grid grid-cols-3 gap-5 mt-4">
       {rows}
@@ -17,8 +23,9 @@ const AllCars = ({cars,searchCar}) => {
 }
 
 AllCars.propTypes = {
-  cars:PropTypes.object.isRequired,
-  searchCar:PropTypes.string.isRequired
+  cars:PropTypes.array.isRequired,
+  searchCar:PropTypes.string.isRequired,
+  isPremium:PropTypes.bool.isRequired
 }
 
 export default AllCars
