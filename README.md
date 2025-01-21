@@ -5,6 +5,16 @@
 
 A straightforward web application that enables users to search for cars by their name and filter results to view only premium cars. This initial version focuses on simplicity and ease of use, with a clean interface and quick search functionality.
 
+## Search By Car Name
+
+User can search any Car by Using Car Name.In future, User can Search by Brand,Model and Year.
+
+
+
+## Filter by Premium cars
+
+User can Easily filtered only Premium cars.we Categoried car if they are Premium.
+
 ## Future Scope
 - **Advanced Filters:** Add filters like price range, car type, brand, and year.
 - **User Accounts:** Allow users to save searches and favorite cars.
